@@ -43,12 +43,28 @@ The analysis is performed on single-nuclei RNA-seq data from:
 - dplyr
 
 
-## Usage
+## Data availability 
 
-The repository is organized into modular scripts that can be run sequentially:
+The single-nuclei RNA-seq data used in this analysis is publicly available in the Gene Expression Omnibus (GEO) under the accession number:
 
-1. `01_preprocessing.R`: Data loading and quality control
-2. `02_integration.R`: Normalization and integration
-3. `03_clustering.R`: Clustering and cell type annotation
+GSE272760
+
+Downloading the Data
+You can download the data using the GEOquery R package:
+
+# Install GEOquery if not installed
+if (!requireNamespace("GEOquery", quietly = TRUE)) install.packages("GEOquery")
+
+# Load the package
+library(GEOquery)
+
+# Download the dataset
+gse <- getGEO("GSE272760", GSEMatrix = TRUE, getGPL = FALSE)
+
+# View sample metadata
+metadata <- pData(gse[[1]])
+head(metadata)
+Alternatively, you can download the raw data manually from https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE272760.
+
 
 
