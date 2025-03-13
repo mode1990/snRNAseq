@@ -195,6 +195,6 @@ ggsave("figures/qc_violin_plots.pdf", plot = VlnPlot(pd, features = c("nFeature_
 ggsave("figures/qc_feature_scatter.pdf", plot = plot_combined, width = 12, height = 6)
 
 # Save the merged Seurat object
-saveRDS(pd, file = "/path/to/the/output/merged_seurat_object_preprocessed.rds")
+saveRDS(pd, file = "/path/to/the/data/merged_seurat_object_preprocessed.rds")
 
-cat("Preprocessing completed and saved to output/merged_seurat_object_preprocessed.rds\n")
+cat("Preprocessing completed and saved to data/merged_seurat_object_preprocessed.rds\n")
