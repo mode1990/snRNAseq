@@ -49,6 +49,7 @@ install.packages(c("Seurat", "data.table", "ggplot2", "dplyr"))
 remotes::install_github("immunogenomics/harmony")
 remotes::install_github("chris-mcginnis-ucsf/DoubletFinder")
 
+```
 
 ## Data Availability
 
