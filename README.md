@@ -1,6 +1,3 @@
-Here’s your README in a clean format, ready for copy-pasting:  
-
-```md
 # Parkinson's Disease Single-Nuclei RNA-Seq Analysis
 
 A comprehensive pipeline for analyzing single-nuclei RNA-seq data from brain samples of Parkinson's disease patients with LRRK2 and GBA mutations compared to healthy controls.
@@ -51,7 +48,7 @@ To install the required R packages, run:
 install.packages(c("Seurat", "data.table", "ggplot2", "dplyr"))
 remotes::install_github("immunogenomics/harmony")
 remotes::install_github("chris-mcginnis-ucsf/DoubletFinder")
-```
+
 
 ## Data Availability
 
@@ -76,10 +73,7 @@ gse <- getGEO("GSE272760", GSEMatrix = TRUE, getGPL = FALSE)
 # View sample metadata
 metadata <- pData(gse[[1]])
 head(metadata)
-```
 
-Alternatively, you can download the raw data manually from:  
-**https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE272760**
-```
 
-This version is properly formatted for Markdown, making it easier to read when rendered on GitHub. Let me know if you need any adjustments! 🚀
+
+
